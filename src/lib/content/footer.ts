@@ -1,6 +1,14 @@
 import { FooterSectionType } from '@/lib/types/sections';
 
 export const footerSection: FooterSectionType = {
-  title: 'Design & Built by Vatsal Singh',
-  link: 'https://github.com/vatsalsinghkv/portfolio-website',
+  credits: [
+    {
+      title: 'Design by Vatsal Singh',
+      link: 'https://github.com/vatsalsinghkv/portfolio-website',
+    },
+    {
+      title: 'Built by NOOBMASTER-08',
+      link: 'https://github.com/NOOBMASTER-08/portfolio-website',
+    },
+  ],
 };

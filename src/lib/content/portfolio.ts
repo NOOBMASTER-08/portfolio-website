@@ -7,33 +7,47 @@
 import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
-  facebook: 'https://www.facebook.com/vatsalsinghkv',
-  instagram: 'https://www.instagram.com/vatsalsinghkv',
-  twitter: 'https://x.com/vatsalsinghkv',
-  github: 'https://github.com/vatsalsinghkv',
-  linkedin: 'https://www.linkedin.com/in/vatsalsinghkv/',
+  instagram: 'https://www.instagram.com/noobmaster.08/',
+  twitter: 'https://x.com/noobmaster_08',
+  github: 'https://github.com/NOOBMASTER-08',
+  linkedin: 'https://www.linkedin.com/in/noobmaster08/',
 };
 
 export const author = {
-  name: 'Vatsal Singh',
-  email: 'vatsalsinghkv@gmail.com',
+  name: 'Ayush Verma',
+  email: 'ayushverma2318@gmail.com',
 };
 
 export const seoData = {
-  title: 'Vatsal Singh | Front-End Developer',
+  title: 'Ayush Verma | Cyber Security Professional',
   description:
-    'Vatsal Singh is a front-end developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Ayush Verma is a Cyber Security professional with a strong interest in both offensive and defensive security.',
   author: author.name,
   image:
     'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
-  url: 'https://vatsalsinghkv.vercel.app/',
+  url: 'https://ayushverma.vercel.app/',
   keywords: [
-    'Vatsal',
-    'Vatsal Singh',
-    '@vatsalsinghkv',
-    'vatsalsinghkv',
+    'Ayush',
+    'Ayush Verma',
+    '@ayushverma',
+    'ayushverma',
     'Portfolio',
-    'Vatsal Portfolio ',
-    'Vatsal Singh Portfolio',
+    'Ayush Portfolio ',
+    'Ayush Verma Portfolio',
+    'noobmaster.08',
+    'noobmaster08',
+    'noobmaster-08',
+    'noobmaster_08',
+    'noob master',
+    '@noobmaster08',
+    'Portfolio',
+    'Ayush Portfolio ',
+    'Ayush Verma Portfolio',
+    'Cyber Security',
+    'Cyber Security Professional',
+    'Penetration Testing',
+    'Vulnerability Assessment',
+    'Threat Detection',
+    'Incident Response',
   ],
 };

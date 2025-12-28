@@ -25,6 +25,11 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'i.ibb.co',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'i.postimg.cc',
         pathname: '/**',
       },
