@@ -25,7 +25,6 @@ export type ExperienceType = {
 };
 
 export type ProjectType = {
-  organization: string;
   id: string;
   name: string;
   url: string;

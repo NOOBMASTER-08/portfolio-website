@@ -1,7 +1,6 @@
 'use client';
 import { certificatesSection } from '@/lib/content/certificates';
 import { PROJECTS_INITIALLY } from '@/lib/utils/config';
-import { sortByYear } from '@/lib/utils/helper';
 
 import { Button, CertificateCard, Wrapper } from '@/components';
 
@@ -9,18 +8,6 @@ import { getSectionAnimation, projectVariants } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-
-
-interface ProjectType {
-  id: string;
-  name: string;
-  url?: string;
-  year?: number;
-  img?: string;
-  tags?: string[];
-  repo?: string;
-  organization?: string;
-}
 
 
 const Certificates = () => {
@@ -35,36 +22,35 @@ const Certificates = () => {
       <motion.h2 className="heading-secondary text-center !mb-12">
         {title}
       </motion.h2>
-      <div className="grid gap-6 grid-cols-auto-250 xs:grid-cols-auto-300 place-items-center">
-        {sortByYear(visibleCertificates as any).map((certificate, i) => {
-          if (i < PROJECTS_INITIALLY) {
-            return (
-              <CertificateCard
-                {...certificate}
-                organization={certificate.organization ?? ''}
-                key={certificate.id}
-                variants={projectVariants}
-                initial="hidden"
-                whileInView="show"
-                custom={i}
-                viewport={{ once: true }}
-              />
-            );
-          }
+<div className="grid gap-6 grid-cols-auto-250 xs:grid-cols-auto-300 place-items-center">
+  {visibleCertificates.map((certificate, i) => {
+    if (i < PROJECTS_INITIALLY) {
+      return (
+        <CertificateCard
+          {...certificate}
+          key={certificate.id}
+          variants={projectVariants}
+          initial="hidden"
+          whileInView="show"
+          custom={i}
+          viewport={{ once: true }}
+        />
+      );
+    }
 
-          return (
-            <CertificateCard
-              {...certificate}
-              organization={certificate.organization ?? ''}
-              key={certificate.id}
-              variants={projectVariants}
-              initial="hidden"
-              animate="show"
-              custom={i - PROJECTS_INITIALLY}
-            />
-          );
-        })}
-      </div>
+    return (
+      <CertificateCard
+        {...certificate}
+        key={certificate.id}
+        variants={projectVariants}
+        initial="hidden"
+        animate="show"
+        custom={i - PROJECTS_INITIALLY}
+      />
+    );
+  })}
+</div>
+
       {certificates.length > PROJECTS_INITIALLY && (
         <Button
           size="lg"

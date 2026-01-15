@@ -61,9 +61,11 @@ const CertificateCard = ({
             <span>{name}</span>
             <span className="mr-1">{year}</span>
           </h4>
-          <p className="text-sm text-text-secondary dark:text-text-secondary-dark">
-            {organization}
-          </p>
+          {organization && (
+            <p className="text-sm text-text-secondary dark:text-text-secondary-dark">
+              {organization}
+            </p>
+          )}
         </div>
       </button>
     </motion.div>
