@@ -10,7 +10,7 @@ import { getSectionAnimation, projectVariants } from '@/styles/animations';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-// ...existing code...
+
 interface ProjectType {
   id: string;
   name: string;
@@ -21,7 +21,7 @@ interface ProjectType {
   repo?: string;
   organization?: string;
 }
-// ...existing code...
+
 
 const Certificates = () => {
   const { certificates, title } = certificatesSection;
@@ -41,7 +41,7 @@ const Certificates = () => {
             return (
               <CertificateCard
                 {...certificate}
-              //  organization={certificate.organization ?? ''}
+                organization={certificate.organization ?? ''}
                 key={certificate.id}
                 variants={projectVariants}
                 initial="hidden"
@@ -55,7 +55,7 @@ const Certificates = () => {
           return (
             <CertificateCard
               {...certificate}
-            //  organization={certificate.organization ?? ''}
+              organization={certificate.organization ?? ''}
               key={certificate.id}
               variants={projectVariants}
               initial="hidden"
