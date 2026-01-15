@@ -1,4 +1,5 @@
 import About from './About';
+import Certificates from './Certificates';
 import Contact from './Contact';
 import Email from './Email';
 import FeaturedProjects from './FeaturedProjects';
@@ -13,6 +14,7 @@ import SocialLinks from './Social/SocialLinks';
 
 export {
   About,
+  Certificates,
   Contact,
   Email,
   FeaturedProjects,

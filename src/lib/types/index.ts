@@ -34,6 +34,16 @@ export type ProjectType = {
   repo: string;
 };
 
+export type CertificateType = {
+  id: string;
+  name: string;
+  organization: string;
+  url: string;
+  year: number;
+  img: string;
+  tags: string[];
+};
+
 export interface FeaturedProjectType
   extends Omit<ProjectType, 'year' | 'repo'> {
   description: string;

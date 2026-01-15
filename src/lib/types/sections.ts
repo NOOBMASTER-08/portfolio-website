@@ -4,6 +4,7 @@ import {
   FeaturedProjectType,
   NavLinkType,
   ProjectType,
+  CertificateType,
   SocialLinkType,
   SoftwareSkillType,
 } from '.';
@@ -56,6 +57,10 @@ export interface ExperienceSectionType extends Section {
 
 export interface ProjectsSectionType extends Section {
   projects: ProjectType[];
+}
+
+export interface CertificatesSectionType extends Section {
+  certificates: CertificateType[];
 }
 
 export interface FeaturedProjectsSectionType extends Section {

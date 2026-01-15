@@ -14,7 +14,7 @@
 - Hero
 - About
 - Skills
-- Experience
+- CTF
 - Projects
 - Contact
 
